@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./Components.css";
 import axios from "axios";
-import cardimg from "../Images/MovieCard.jpg";
+
+import { NavLink } from "react-router-dom";
 
 const MovieCard = () => {
   const [data, setData] = useState([]);
@@ -20,8 +21,7 @@ const MovieCard = () => {
     <>
       <div id="cards-design">
         {data.map((item) => {
-            if(item.show.image)
-            var src=item.show.image.medium
+          if (item.show.image) var src = item.show.image.medium;
           return (
             <div className="card">
               <img src={src} alt="card img" className="card-img" />
@@ -80,7 +80,9 @@ const MovieCard = () => {
                     <span>{item.show.rating.average}</span>
                   </div>
                 </p>
-                <button classname="btn">Show Details</button>
+                <NavLink to="/details">
+                  <button classname="btn">Show Details</button>
+                </NavLink>
               </div>
             </div>
           );

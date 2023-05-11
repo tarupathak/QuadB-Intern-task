@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
+
+import { NavLink } from "react-router-dom";
 import axios from "axios";
 
 const MovieDetails = () => {
-
   const [data, setData] = useState([]);
   useEffect(() => {
     axios
@@ -19,150 +20,157 @@ const MovieDetails = () => {
   return (
     <div>
       {data.map((item) => {
+        if (item.show.image) var src = item.show.image.original;
         return (
           <div id="details">
             <div id="movie-details">
-              <div id="movie-name">{item.show.name}</div>
+              <div id="movie-name">Name</div>
               <div>
                 <div>
                   <span className="inline">ID : </span>
-                  <span>{item.show.id}</span>
+                  <span></span>
                 </div>
                 <div>
                   <span className="inline">TYPE : </span>
-                  <span>{item.show.type}</span>
+                  <span></span>
                 </div>
                 <div>
                   <span className="inline">LANGUAGE : </span>
-                  <span>{item.show.language}</span>
+                  <span></span>
                 </div>
                 <div>
                   <span className="inline">GENRES : </span>
-                  <span>{item.show.genres}</span>
+                  <span></span>
                 </div>
                 <div>
                   <span className="inline">STATUS : </span>
-                  <span>{item.show.status}</span>
+                  <span></span>
                 </div>
                 <div>
                   <span className="inline">RUNTIME : </span>
-                  <span>{item.show.runtime}</span>
+                  <span></span>
                 </div>
                 <div>
                   <span className="inline">AVERAGE RUNTIME : </span>
-                  <span>{item.show.averageRuntime}</span>
+                  <span></span>
                 </div>
                 <div>
                   <span className="inline">PREMIERD : </span>
-                  <span>{item.show.premiered}</span>
+                  <span></span>
                 </div>
                 <div>
                   <span className="inline">ENDED : </span>
-                  <span>{item.show.ended}</span>
+                  <span></span>
                 </div>
                 <div>
                   <span className="inline">OFFICIAL SITE : </span>
-                  <span>item.show.officialSite</span>
+                  <span></span>
                 </div>
                 <div>
                   <span className="inline">SCHEDULE : </span>
                   <span>
                     <div>
                       <span className="inline">TIME : </span>
-                      <span>{item.show.schedule.time}</span>
+                      <span></span>
                     </div>
                     <div>
                       <span className="inline">DAYS : </span>
-                      <span>{item.show.schedule.days}</span>
+                      <span></span>
                     </div>
                     <div>
                       <span className="inline">RATINGS : </span>
                       <span>
                         <div>
                           <span className="inline">AVERAGE RATING : </span>
-                          <span>{item.show.rating.averageRuntime}</span>
+                          <span></span>
                         </div>
                       </span>
                     </div>
                     <div>
                       <span className="inline">WEIGHT : </span>
-                      <span>{item.show.weight}</span>
+                      <span></span>
                     </div>
                     <div>
                       <span className="inline">NETWORK : </span>
                       <span>
                         <div>
                           <span className="inline">ID : </span>
-                          <span>{item.show.network.id}</span>
+                          <span></span>
                         </div>
                         <div>
                           <span className="inline">NAME : </span>
-                          <span>{item.show.network.name}</span>
+                          <span></span>
                         </div>
                         <div>
                           <span className="inline">COUNTRY : </span>
                           <span>
                             <div>
                               <span className="inline">NAME : </span>
-                              <span>{item.show.network.country.name}</span>
+                              <span></span>
                             </div>
                             <div>
                               <span className="inline">CODE : </span>
-                              <span>{item.show.network.country.code}</span>
+                              <span></span>
                             </div>
                             <div>
                               <span className="inline">TIMEZONE : </span>
-                              <span>{item.show.network.country.timezone}</span>
+                              <span></span>
                             </div>
                           </span>
                         </div>
                         <div>
                           <span className="inline">OFFICIAL SITE : </span>
-                          <span>{item.show.network.officialSite}</span>
+                          <span></span>
                         </div>
                       </span>
                     </div>
                     <div>
                       <span className="inline">WEB CHANNEL : </span>
-                      <span>{item.show.webChannel}</span>
+                      <span></span>
                     </div>
                     <div>
                       <span className="inline">DVD COUNTRY : </span>
-                      <span>{item.show.dvdCountry}</span>
+                      <span></span>
                     </div>
                     <div>
                       <span className="inline">EXTERNALS : </span>
                       <span>
                         <div>
                           <span className="inline">tvrage : </span>
-                          <span>{item.show.externals.tvrage}</span>
+                          <span></span>
                         </div>
                         <div>
                           <span className="inline">thetvdb: </span>
-                          <span>{item.show.externals.thetvdb}</span>
+                          <span></span>
                         </div>
                         <div>
                           <span className="inline">imdb : </span>
-                          <span>{item.show.externals.imdb}</span>
+                          <span></span>
                         </div>
                       </span>
                     </div>
                     <div>
                       <span className="inline">SUMMARY : </span>
-                      <span>{item.show.summary}</span>
+                      <span></span>
                     </div>
                     <div>
                       <span className="inline">UPDATED : </span>
-                      <span>{item.show.networklinks}</span>
+                      <span></span>
                     </div>
                     <div></div>
                   </span>
                 </div>
               </div>
               <div id="book-btn">
-                <span>Previous Show</span>
-                <span>Book</span>
-                <span>Next Show</span>
+                <NavLink to="/">
+                  <span>Previous Show</span>
+                </NavLink>
+                <NavLink to="/">
+                  <span>Book</span>
+                </NavLink>
+                <NavLink to="/">
+                  <span>Next Show</span>
+                </NavLink>
               </div>
             </div>
           </div>

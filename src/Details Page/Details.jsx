@@ -1,13 +1,13 @@
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import "./Details.css";
-// import MovieDetails from "../Components/MovieDetails";
+import MovieDetails from "../Components/MovieDetails";
 
 const Details = () => {
   return (
     <>
       <Navbar />
-      {/* <MovieDetails /> */}
+      <MovieDetails />
       <Footer />
     </>
   );

@@ -51,37 +51,74 @@
   }
 }
 
-/* <------------SLIDES------------> */
+/* <------------MOVIE CARDS------------> */
 
-ul li.slick-active button {
-  &::before {
-    color: white !important;
-  }
-}
-& > button {
-  opacity: 1;
-  z-index: 1500;
-  width: 5vw;
-  height: 100%;
-  &:hover {
-    opacity: 1;
-    z-index: 2000;
-    transition: opacity 0.2s ease 0s;
-  }
-}
-#slides ul li button {
-  &::before {
-    font-size: 11px;
-    color: rgb(150, 158, 171);
-  }
+.card{
+    width: 320px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid #fff;
+    position: relative;
+    margin-top: 6vh;
 }
 
-.slick-prev {
-  left: -75px;
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
 }
-.slick-next {
-  right: -75px;
+
+.card-body{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter:blur(5px);
+    border-radius: 15px;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
 }
-.slick-list {
-  overflow: initial !important;
+
+.card:hover .card-body {
+    right: 0;
+
+}
+.card-title{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.card-sub-title{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.card-info{
+    font-size: 16px; 
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 400;
+}
+
+.card-btn{
+    color: #1f3d47;
+    background: #8fabba;
+    padding: 10px 20px;
+    width: 120px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
 }

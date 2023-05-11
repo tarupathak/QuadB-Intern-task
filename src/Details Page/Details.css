@@ -1,0 +1,49 @@
+/* #details{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+#movie-img{
+   
+}
+
+#movie-name{
+    font-size: 5rem;
+    align-items: center;
+} */
+
+#details{
+    align-items: center;
+}
+#movie-card {
+  height: 100%;
+  width: 100%;
+}
+
+#movie-name{
+    font-size: 8vh;
+    text-align: center;
+}
+
+#movie-details {
+    margin-left: 26vw;
+    margin-top: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2vw;
+    height: fit-content;
+   width: 800px;
+  background: linear-gradient(
+    230.33deg,
+    #d9d9d9 -274.99%,
+    rgba(217, 217, 217, 0) 124.83%
+  );
+  border-radius: 33px;
+  
+}
+
+.inline{
+    font-size: 3vh;
+}

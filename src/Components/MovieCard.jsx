@@ -78,7 +78,7 @@ const MovieCard = () => {
                     <span>{item.show.rating.average}</span>
                   </div>
                 </p>
-                <button classname="btn">Book</button>
+                <button classname="btn">Show Details</button>
               </div>
             </div>
           );

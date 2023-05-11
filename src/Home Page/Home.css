@@ -1,0 +1,8 @@
+#home-page{
+    position: relative;
+  height: fit-content;
+  padding: 0 calc(3.5vw + 5px);
+  display: block;
+  overflow-x: hidden;
+  background-color: black;
+}

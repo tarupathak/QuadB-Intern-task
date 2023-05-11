@@ -1,6 +1,6 @@
 /* <------------NAVBAR------------> */
-#navbar{
-    display: flex;
+#navbar {
+  display: flex;
   min-height: 9vh;
   align-items: center;
   flex-direction: row;
@@ -8,49 +8,80 @@
   padding: 0.5rem 3rem;
 }
 
-#name{
-    font-size: 6vh;
-    margin-left: 2rem;
+#name {
+  font-size: 5vh;
+  margin-left: 2rem;
 }
 
-#links{
-    display: flex;
-    align-items: space-evenly;
-     justify-content:space-between;
-     flex-direction: row;
-     flex-wrap: row wrap;
-     flex-shrink: 0;
-     /* margin-right: auto;
-     margin-left: 70rem; */
+#links {
+  display: flex;
+  align-items: space-evenly;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: row wrap;
+  flex-shrink: 0;
 }
 
-#links li{
-    list-style: none;
+#links li {
+  list-style: none;
 }
 
-
-
-.nav-link{
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        position: relative;
+.nav-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
 }
 
-#links span{
-    color: #fff;
-        font-size: 1.2rem;
-        font-weight: 300;
-        letter-spacing: 1px;
-        line-height: 1.08;
-        padding: 0% 0.5rem;
-        margin-top: 5px;
-        position: relative;
+#links span {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 1.08;
+  padding: 0% 0.5rem;
+  margin-top: 5px;
+  position: relative;
 }
 
-@media screen and (min-width: 280px) and (max-width: 991px){
-    #links{
-        display: none;
-    }
+@media screen and (min-width: 280px) and (max-width: 991px) {
+  #links {
+    display: none;
+  }
+}
+
+/* <------------SLIDES------------> */
+
+ul li.slick-active button {
+  &::before {
+    color: white !important;
+  }
+}
+& > button {
+  opacity: 1;
+  z-index: 1500;
+  width: 5vw;
+  height: 100%;
+  &:hover {
+    opacity: 1;
+    z-index: 2000;
+    transition: opacity 0.2s ease 0s;
+  }
+}
+#slides ul li button {
+  &::before {
+    font-size: 11px;
+    color: rgb(150, 158, 171);
+  }
+}
+
+.slick-prev {
+  left: -75px;
+}
+.slick-next {
+  right: -75px;
+}
+.slick-list {
+  overflow: initial !important;
 }

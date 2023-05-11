@@ -3,6 +3,7 @@ import "./Home.css";
 import Navbar from "../Components/Navbar";
 import Slides from "../Components/Slides";
 import MovieCard from "../Components/MovieCard";
+import Footer from "../Components/Footer";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <div id="title"> BOOK YOUR MOVIE </div>
         <MovieCard />
       </main>
+      <Footer />
     </>
   );
 };

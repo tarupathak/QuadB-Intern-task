@@ -130,3 +130,50 @@
     font-weight: 500;
     cursor: pointer;
 }
+
+/* <------------FOOTER------------> */
+
+#footer{
+    padding: 2rem 0;
+  margin-bottom: 0;
+
+}
+
+#footer-container{
+    width: 95%;
+margin: 0 auto;
+}
+
+#movie-title{
+    font-size: 7vh;
+  text-align: center;
+}
+
+#foot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    flex-grow: initial;
+    justify-content: center;
+}
+
+#foot li{
+    list-style: none;
+}
+
+#foot p{
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    margin-right: 0.3rem;
+}
+
+#copyright{
+    text-align: center;
+}
+
+#copyright p{
+    font-weight: 400 !important;
+    margin-top: 3vh;
+}

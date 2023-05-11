@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const Footer = () => {
   return (
     <>
-    <section id="footer">
+      <section id="footer">
         <div id="footer-container">
-            <div id="movie-title">BookMyMovie</div>
-            <div id="foot">
+          <div id="movie-title">BookMyMovie</div>
+          <div id="foot">
             <li>
               <p>English</p>
             </li>
@@ -52,12 +52,12 @@ const Footer = () => {
             <li>
               <p>The Disney Bundle</p>
             </li>
-            </div>
-            <div id="copyright">BookMyMovie @ 2023</div>
+          </div>
+          <div id="copyright">BookMyMovie @ 2023</div>
         </div>
-    </section>
+      </section>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

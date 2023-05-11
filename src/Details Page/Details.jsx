@@ -1,14 +1,14 @@
-import React from 'react'
-import Navbar from '../Components/Navbar'
-import Footer from '../Components/Footer'
+import React from "react";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 
 const Details = () => {
   return (
     <>
-        <Navbar />
-        <Footer />
+      <Navbar />
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Details
+export default Details;

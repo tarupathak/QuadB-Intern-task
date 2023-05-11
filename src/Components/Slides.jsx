@@ -1,5 +1,5 @@
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-bootstrap/Carousel";
 import slide1 from "../Images/slide1.jpg";
 import slide2 from "../Images/slide2.jpg";
@@ -10,10 +10,9 @@ import slide6 from "../Images/slide6.jpg";
 import slide7 from "../Images/slide7.jpg";
 
 const Slides = () => {
-
   return (
     <Carousel variant="dark">
-     <Carousel.Item interval={1000}>
+      <Carousel.Item interval={1000}>
         <img className="d-block w-100" src={slide1} alt="First slide" />
       </Carousel.Item>
       <Carousel.Item interval={1000}>
@@ -34,7 +33,7 @@ const Slides = () => {
       <Carousel.Item interval={1000}>
         <img className="d-block w-100" src={slide7} alt="Seventh slide" />
       </Carousel.Item>
-  </Carousel>
+    </Carousel>
   );
 };
 

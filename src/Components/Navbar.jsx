@@ -5,7 +5,7 @@ import "./Components.css";
 const Navbar = () => {
   return (
     <>
-      <nav id="navbar"> 
+      <nav id="navbar">
         <div id="name">BookMyMovie</div>
         <div id="links">
           <li>

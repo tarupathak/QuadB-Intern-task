@@ -36,12 +36,7 @@
   padding: 2vw;
   height: fit-content;
   width: 800px;
-  background: linear-gradient(
-    230.33deg,
-    #d9d9d9 -274.99%,
-    rgba(217, 217, 217, 0) 124.83%
-  );
-  border-radius: 33px;
+  
 }
 
 #movie-details img{

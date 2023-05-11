@@ -4,14 +4,15 @@ import "../Details Page/Details.css";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
+import './Components.css'
 
 const Form = () => {
   const [modal, setmodal] = useState(false);
   return (
     <div>
-      <Modal size="lg" isOpen={modal} toggle={() => setmodal(!modal)}>
-        <ModalHeader toggle={() => setmodal(!modal)}>Name</ModalHeader>
-        <ModalBody>
+      <Modal size="lg" isOpen={modal} toggle={() => setmodal(!modal)} >
+        <ModalHeader toggle={() => setmodal(!modal)} className="bg-primary text-white">Name</ModalHeader>
+        <ModalBody className="bg-dark text-white">
           <form>
             <Row>
               <Col lg={12}>
@@ -50,7 +51,7 @@ const Form = () => {
           </form>
         </ModalBody>
         <ModalFooter>
-          <Button variant="secondary">Book</Button>
+          <Button variant="primary">Book</Button>
         </ModalFooter>
       </Modal>
       <div onClick={() => setmodal(true)}>Book</div>

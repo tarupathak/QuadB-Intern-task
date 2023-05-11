@@ -1,5 +1,6 @@
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import Form from "../Components/Form";
 import "./Details.css";
 import {
   Navigate,
@@ -67,7 +68,7 @@ const Details = () => {
               <span>
                 Previous Episode
               </span>
-              <span>Book</span>
+              {/* <span>Book</span> */} <span><Form /></span>
               <span>Next Episode</span>
             </div>
           </div>

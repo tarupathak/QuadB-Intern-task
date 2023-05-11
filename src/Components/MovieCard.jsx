@@ -3,10 +3,8 @@ import "./Components.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-import { NavLink } from "react-router-dom";
-
 const MovieCard = () => {
-    const navHandler = useNavigate();
+  const navHandler = useNavigate();
   const [data, setData] = useState([]);
   useEffect(() => {
     axios
@@ -82,9 +80,13 @@ const MovieCard = () => {
                     <span>{item.show.rating.average}</span>
                   </div>
                 </p>
-               
-                  <button classname="btn" onClick={() => navHandler(`/details`, {state:item})}>Show Details</button>
-    
+
+                <button
+                  classname="btn"
+                  onClick={() => navHandler(`/details`, { state: item })}
+                >
+                  Show Details
+                </button>
               </div>
             </div>
           );

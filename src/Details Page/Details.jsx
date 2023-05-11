@@ -149,7 +149,13 @@ const Details = () => {
               </span>
             </div>
           </div>
+          <div  id="book-btn">
+            <span>Previous Show</span>
+            <span>Book</span>
+            <span>Next Show</span>
+          </div>
         </div>
+       
       </div>
       <Footer />
     </>

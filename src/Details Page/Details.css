@@ -47,3 +47,25 @@
 .inline{
     font-size: 3vh;
 }
+
+#book-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 3vh;
+}
+
+
+#book-btn span{
+    width: 200px;
+height: 57px;
+border-radius: 10px;
+font-weight: 800;
+font-size: 3vh;
+background-color: #d9d9d9;
+color:black;
+text-align: center;
+padding: 9px;
+cursor: pointer;
+
+}

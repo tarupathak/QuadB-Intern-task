@@ -1,58 +1,41 @@
-import React, { useState, useEffect } from "react";
-
+import React from "react";
 import { NavLink } from "react-router-dom";
-import axios from "axios";
 
-const MovieDetails = () => {
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    axios
-      .get("https://api.tvmaze.com/search/shows?q=all")
-      .then((res) => {
-        console.log(res.data);
-        setData(res.data);
-      })
-      .catch((err) => {
-        alert("Something went wrong.");
-      });
-  }, []);
+
+const MovieDetails = (item) => {
 
   return (
-    <div>
-      {data.map((item) => {
-        if (item.show.image) var src = item.show.image.original;
-        return (
-          <div id="details">
+    <div> <div id="details">
             <div id="movie-details">
-              <div id="movie-name">Name</div>
+              <div id="movie-name">{item.item.show.name}</div>
               <div>
                 <div>
                   <span className="inline">ID : </span>
-                  <span></span>
+                  <span>{item.item.show.id}</span>
                 </div>
                 <div>
                   <span className="inline">TYPE : </span>
-                  <span></span>
+                  <span>{item.item.show.type}</span>
                 </div>
                 <div>
                   <span className="inline">LANGUAGE : </span>
-                  <span></span>
+                  <span>{item.item.show.language}</span>
                 </div>
                 <div>
                   <span className="inline">GENRES : </span>
-                  <span></span>
+                  <span>{item.item.show.genres}</span>
                 </div>
                 <div>
                   <span className="inline">STATUS : </span>
-                  <span></span>
+                  <span>{item.item.show.status}</span>
                 </div>
                 <div>
                   <span className="inline">RUNTIME : </span>
-                  <span></span>
+                  <span>{item.item.show.runtime}</span>
                 </div>
                 <div>
                   <span className="inline">AVERAGE RUNTIME : </span>
-                  <span></span>
+                  <span>{item.item.show.averageRuntime}</span>
                 </div>
                 <div>
                   <span className="inline">PREMIERD : </span>
@@ -174,8 +157,6 @@ const MovieDetails = () => {
               </div>
             </div>
           </div>
-        );
-      })}
     </div>
   );
 };

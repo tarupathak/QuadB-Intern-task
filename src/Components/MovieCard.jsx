@@ -20,9 +20,11 @@ const MovieCard = () => {
     <>
       <div id="cards-design">
         {data.map((item) => {
+            if(item.show.image)
+            var src=item.show.image.medium
           return (
             <div className="card">
-              <img src={cardimg} alt="card img" className="card-img" />
+              <img src={src} alt="card img" className="card-img" />
               <div className="card-body">
                 <h1 className="card-title">{item.show.name}</h1>
                 <p className="Card-sub-title">
